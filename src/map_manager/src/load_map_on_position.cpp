@@ -76,26 +76,42 @@ private:
     double dz = transform.transform.translation.z - z_;
     double distance = sqrt(dx*dx + dy*dy + dz*dz);
 
+    bool is_changed = false;
+
     if (distance < 0.5) {  // trigger range
-      std::string next_map = (current_map_ == map_a_) ? map_b_ : map_a_;
-      auto request = std::make_shared<nav2_msgs::srv::LoadMap::Request>();
-      request->map_url = next_map;
 
-      if (!client_->wait_for_service(std::chrono::seconds(1))) {
-        RCLCPP_ERROR(this->get_logger(), "Service not available");
-        return;
-      }
+                // std::string next_map = (current_map_ == map_a_) ? map_b_ : map_a_;
+                std::string next_map = (dx>0) ? map_b_ : map_a_; 
+                auto request = std::make_shared<nav2_msgs::srv::LoadMap::Request>();
+                request->map_url = next_map;
 
-    client_->async_send_request(request, [this, next_map](rclcpp::Client<nav2_msgs::srv::LoadMap>::SharedFuture future) {
-        auto response = future.get();
-        if (response->result == nav2_msgs::srv::LoadMap::Response::RESULT_SUCCESS) {
-            RCLCPP_INFO(this->get_logger(), "Map loaded successfully: %s", next_map.c_str());
-            current_map_ = next_map;
-        } else {
-            RCLCPP_ERROR(this->get_logger(), "Failed to load map: %s", next_map.c_str());
+                if (!client_->wait_for_service(std::chrono::seconds(1))) {
+                  RCLCPP_ERROR(this->get_logger(), "Service not available");
+                  return;
+                }
+
+            if( is_changed == false){
+                client_->async_send_request(request, [this, next_map](rclcpp::Client<nav2_msgs::srv::LoadMap>::SharedFuture future) {
+                    auto response = future.get();
+                    if (response->result == nav2_msgs::srv::LoadMap::Response::RESULT_SUCCESS) {
+                        RCLCPP_INFO(this->get_logger(), "Map loaded successfully: %s", next_map.c_str());
+                        // current_map_ = next_map;
+                        
+                    } else {
+                        RCLCPP_ERROR(this->get_logger(), "Failed to load map: %s", next_map.c_str());
+                    }
+
+                    // is_changed = true;
+                  });
+                    
+                    is_changed = true;
+                }
+
+                current_map_ = next_map;
         }
-      });
-    }
+        else{
+            is_changed = false;
+        }
   }
 };
 
