@@ -4,7 +4,7 @@
 
 # 1. 📚 TOC
 - [1. 📚 TOC](#1--toc)
-- [2. 1.📔 Introduction](#2-1-introduction)
+- [2. 📔 Introduction](#2-1-introduction)
   - [2.1. 🧾 Features](#21--features)
 - [3. 📦 Installation](#3--installation)
   - [3.1. 🛠️ Prerequisites](#31-️-prerequisites)
@@ -12,7 +12,7 @@
 - [4. ⚙️ Running the Package](#4-️-running-the-package)
 - [🔍 Working](#-working)
 
-# 2. 1.📔 Introduction
+# 2. 📔 Introduction
 
 This is a ROS2 package for managing multiple maps connected via wormholes / doors.
 
