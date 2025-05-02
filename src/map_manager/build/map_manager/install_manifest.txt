@@ -1,0 +1,16 @@
+/home/ros2_ws/anscer_robotics/wormhole_manager/src/map_manager/install/map_manager/lib/map_manager/map_manager_node
+/home/ros2_ws/anscer_robotics/wormhole_manager/src/map_manager/install/map_manager/share/ament_index/resource_index/package_run_dependencies/map_manager
+/home/ros2_ws/anscer_robotics/wormhole_manager/src/map_manager/install/map_manager/share/ament_index/resource_index/parent_prefix_path/map_manager
+/home/ros2_ws/anscer_robotics/wormhole_manager/src/map_manager/install/map_manager/share/map_manager/environment/ament_prefix_path.sh
+/home/ros2_ws/anscer_robotics/wormhole_manager/src/map_manager/install/map_manager/share/map_manager/environment/ament_prefix_path.dsv
+/home/ros2_ws/anscer_robotics/wormhole_manager/src/map_manager/install/map_manager/share/map_manager/environment/path.sh
+/home/ros2_ws/anscer_robotics/wormhole_manager/src/map_manager/install/map_manager/share/map_manager/environment/path.dsv
+/home/ros2_ws/anscer_robotics/wormhole_manager/src/map_manager/install/map_manager/share/map_manager/local_setup.bash
+/home/ros2_ws/anscer_robotics/wormhole_manager/src/map_manager/install/map_manager/share/map_manager/local_setup.sh
+/home/ros2_ws/anscer_robotics/wormhole_manager/src/map_manager/install/map_manager/share/map_manager/local_setup.zsh
+/home/ros2_ws/anscer_robotics/wormhole_manager/src/map_manager/install/map_manager/share/map_manager/local_setup.dsv
+/home/ros2_ws/anscer_robotics/wormhole_manager/src/map_manager/install/map_manager/share/map_manager/package.dsv
+/home/ros2_ws/anscer_robotics/wormhole_manager/src/map_manager/install/map_manager/share/ament_index/resource_index/packages/map_manager
+/home/ros2_ws/anscer_robotics/wormhole_manager/src/map_manager/install/map_manager/share/map_manager/cmake/map_managerConfig.cmake
+/home/ros2_ws/anscer_robotics/wormhole_manager/src/map_manager/install/map_manager/share/map_manager/cmake/map_managerConfig-version.cmake
+/home/ros2_ws/anscer_robotics/wormhole_manager/src/map_manager/install/map_manager/share/map_manager/package.xml

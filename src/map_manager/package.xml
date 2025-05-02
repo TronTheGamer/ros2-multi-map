@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>map_manager</name>
+  <version>0.0.1</version>
+  <description>Load map when base_link reaches a position</description>
+
+  <maintainer email="your_email@example.com">Your Name</maintainer>
+  <license>Apache-2.0</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <build_depend>rclcpp</build_depend>
+  <exec_depend>rclcpp</exec_depend>
+
+  <build_depend>tf2_ros</build_depend>
+  <exec_depend>tf2_ros</exec_depend>
+
+  <build_depend>nav2_msgs</build_depend>
+  <exec_depend>nav2_msgs</exec_depend>
+
+  <build_depend>geometry_msgs</build_depend>
+  <exec_depend>geometry_msgs</exec_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
