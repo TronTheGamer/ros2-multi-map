@@ -44,7 +44,7 @@ This is a ROS2 package for managing multiple maps connected via wormholes / door
     source /opt/ros/humble/setup.bash
     ```
 
-- Clone the repository into your ROS2 workspace and cd into the directory:
+- Clone the repository into your ROS2 workspace and cd into the `cloned directory/src/map_manager`:
 
 - Build the package using colcon
 
